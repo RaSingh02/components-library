@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Nunito', Arial;
+}
+
+.side_menu {
+    background-color: #f5f5f5;
+}
+
+#checkbox, .btn span { /* Hide the checkbox input & word "Menu" in the button */
+    display: none;
+}
+
+/* Menu button - starts */
+.btn {
+    display: block;
+    background-color: #247D9E;
+    color: #fff;
+    width: 55px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: width .3s ease-in-out;
+}
+/* Menu button - ends */
+
+/* Sidebar - starts */
+.sidebar {
+    background-color: #2B2E33;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    z-index: 1111;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-250px);
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar ul a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    color: #BAB5BD;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.sidebar ul a li i {
+    margin-right: 15px;
+}
+
+/* Add the word "New" to the second item and "2" to the third item */
+.sidebar ul a:nth-child(5)::after, .sidebar ul a:nth-child(3)::after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -9px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 7px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.sidebar ul a:nth-child(5)::after {
+    content: "New";
+    background-color: tomato;
+}
+
+.sidebar ul a:nth-child(3)::after {
+    content: "4";
+    background-color: #247D9E;
+}
+
+/* Add margin to the icon in the second item */
+.sidebar ul a:nth-child(5) li i {
+    margin-left: 4px;
+    margin-right: 19px;
+}
+
+.sidebar ul a:hover, .sidebar ul a.active {
+    background-color: #161920;
+    color: #fff;
+}
+
+.sidebar ul a:hover::before, .sidebar ul a.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #247D9E;
+    width: 4px;
+    height: 100%;
+}
+/* Sidebar - ends */
+
+/* Effect of showing the sidebar - starts */
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+#checkbox:checked + .btn {
+    width: 250px;
+    padding: 0 20px;
+}
+
+#checkbox:checked + .btn span { /* Show again the word "Menu" in the button */
+    display: inline;
+}
+/* Effect of showing the sidebar - ends */
+
+
+
+/* Drop Menu Begins HERE */
+.drop_menu {
+	margin: 0;
+	padding: 0;
+    font-family: sans-serif;
+}
+
+a {text-decoration: none;}
+
+.container {
+  display: flex;
+	margin: auto;
+	width: 1000px;
+  justify-content: space-around;
+}
+
+ul {
+	padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+	list-style: none;
+}
+
+nav {
+	background: darkgray;
+	font-size: 0;
+	position: relative;
+
+}
+
+nav > ul > li {
+	display: inline-block;
+  	font-size: 14px;
+  	padding: 0 15px;
+  	position: relative;
+}
+
+nav > ul > li > a {
+	color: #fff;
+  	display: block;
+  	padding: 20px 0;
+  	border-bottom: 3px solid transparent;
+    transition: all .3s ease;
+}
+nav > ul > li:hover > a {
+	color: #444;
+  	border-bottom: 3px solid #444;
+}
+
+.mega-menu {
+	background: #eee;
+  	visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  	position: absolute;
+  	left: 0;
+  	width: 100%;
+    padding-bottom: 20px;
+}
+.mega-menu h3 {color: #444;}
+
+.mega-menu .container {
+    display: flex;
+}
+.mega-menu .item {
+	flex-grow: 1;
+    margin: 0 10px;
+}
+.mega-menu .item img {
+    width: 100%;
+}
+.mega-menu a {
+	border-bottom: 1px solid #ddd;
+  	color: #4ea3d8;
+  	display: block;
+  	padding: 10px 0;
+}
+.mega-menu a:hover {color: #2d6a91;}
+
+
+.dropdown {position: static;}
+
+.dropdown:hover .mega-menu {
+    visibility: visible;
+    opacity: 1;
+}
