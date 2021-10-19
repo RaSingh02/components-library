@@ -1,106 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Components Library</title>
-    <script src="https://kit.fontawesome.com/844569d310.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="side_menu">
-    <nav class="nav-1">
-      <input type="checkbox" id="checkbox">
-      <label class="btn" for="checkbox"><i class="fas fa-bars"></i> <span>Menu</span></label>
-      <div class="sidebar">
-        <ul>
-          <a href="#" class="active"><li>Home</li></a>
-          <a href="#"><li>Page</li></a>
-          <a href="#"><li>Page</li></a>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Contact</li></a>
-        </ul>
-      </div>
-    </nav>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Components Library</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/403cbe08da.js"></script>
+  <script src="js/jquery.js"> </script>
+  <script src="js/jquery-2.js"></script>
+</head>
 
+<body class"nav_1">
+  <input type="checkbox" id="checkbox">
+  <label class="btn" for="checkbox"><i class="fa fa-bars"></i> <span>Menu</span></label>
 
+  <div class="sidebar">
+    <ul>
+      <a href="#" class="active"><li><i class="fa fa-home "></i>Home</li></a>
+      <a href="#"><li><i class="fa fa-file"></i>Page 1</li></a>
+      <a href="#"><li><i class="fa fa-file"></i>Page 2</li></a>
+      <a href="#"><li><i class="fa fa-file"></i>Page 3</li></a>
+      <a href="#"><li><i class="fa fa-address-book"></i>Contact Us</li></a>
+      <a href="#"><li>About</li></a>
+    </ul>
+  </div>
+</body>
 
-
-<body class="drop_menu">
+<body class"nav_2">
   <nav>
-  <ul class="container">
-    <li><a href='#'>Home</a></li>
-    <li class='dropdown'>
-      <a href='#'>Pages <i class="fas fa-angle-down"></i></a>
-      <div class='mega-menu'>
-      	<div class="container">
-          <div class="item">
-              <h3>Home Page</h3>
-              <ul>
-                <li><a href='#'>Home Page</a></li>
-              </ul>
-          </div>
-          <div class="item">
-              <h3>Contact</h3>
-              <ul>
-                <li><a href='#'>Contact Page #1</a></li>
-                <li><a href='#'>Contact Page #2</a></li>
-                <li><a href='#'>Contact Page #3</a></li>
-                <li><a href='#'>Contact Page #4</a></li>
-              </ul>
-          </div>
-          <div class="item">
-              <h3>Portfolio</h3>
-              <ul>
-                <li><a href='#'>Portfolio Page</a></li>
-              </ul>
-          </div>
-          <div class="item">
-             <h3>Custom</h3>
-             <img src="img/placeholder.jpg">
-          </div>
-        </div>
+    <ul class="main">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li><a href="#">news</a>
+        <ul class="drop menu2">
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Story 1</a></li>
+          <li><a href="#">Story 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">contact</a>
+        <ul class="drop menu3">
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Phone</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
+      </li>
+      <li><a href="#">works</a>
+        <ul class="drop menu4">
+          <li><a href="#">Reference 1</a></li>
+          <li><a href="#">Reference 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">team</a>
+        <ul class="drop menu5">
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Front-End</a></li>
+          <li><a href="#">Back-End</a></li>
+        </ul>
+      </li>
+      <li><a href="#">about</a>
+        <ul class="drop menu6">
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+<hr>
+
+<body class="buttons">
+  <a href="#" class="square_btn">BUTTON</a>
+  <a href="#" class="hollow_btn">BUTTON</a>
+
+  <a href="#" class="emboss_btn">BUTTON</a>
+
+  <label class="label">
+    <div class="toggle">
+      <input class="toggle-state" type="checkbox" name="check" value="check" />
+      <div class="indicator"></div>
+    </div>
+    <div class="label-text">Light Mode</div>
+  </label>
+</body>
+
+<hr>
+
+<body class="gradient">
+  <article>
+    <h1 class="gradient-header">Gradient Text</h1>
+    <p class="gradient-subtitle">With subtitles</p>
+  </article>
+</body>
+
+<body class="neon">
+  <p class="logo-1">
+    We're Open!
+  </p>
+</body>
+
+<body class="threed-text">
+  <div class="threeD">
+    ANOTHER WEB GUY
+  </div>
+</body>
+
+<body class="striped-text">
+  <h1 class="hello">Hello</h1>
+</body>
+
+<hr>
+
+<body class="product_card">
+  <div id="container">
+
+    <div class="product-details">
+
+      <h1 class="title">CHRISTMAS TREE</h1>
+      <span class="hint-star star">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+      </span>
+
+      <p class="information">" Let's spread the joy , here is Christmas , the most awaited day of the year.Christmas Tree is what one need the most. Here is the correct tree which will enhance your Christmas.</p>
+
+
+      <div class="control">
+
+        <button class="get">
+          <span class="price">$250</span>
+          <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+          <span class="buy">Get now</span>
+        </button>
       </div>
-    </li>
-    <li class='dropdown'>
-      <a href='#'>Images <i class="fas fa-angle-down"></i> </a>
-      <div class='mega-menu'>
-        <div class="container">
-          <div class="item">
-              <h3>Image One</h3>
-              <img src="img/placeholder.jpg">
-          </div>
+    </div>
 
-          <div class="item">
-              <h3>Image Two</h3>
-              <img src="img/placeholder.jpg">
-          </div>
+    <div class="product-image">
+      <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
 
-          <div class="item">
-              <h3>Image Three</h3>
-              <img src="img/placeholder.jpg">
-          </div>
+  </div>
+</body>
 
-          <div class="item">
-              <h3>Image Four</h3>
-              <img src="img/placeholder.jpg">
-          </div>
-
-          <div class="item">
-              <h3>Image Five</h3>
-              <img src="img/placeholder.jpg">
-          </div>
-
-          <div class="item">
-              <h3>Image Six</h3>
-              <img src="img/placeholder.jpg">
-          </div>
-
-        </div>
-      </div>
-    </li>
-    <li><a href='#'>About</a></li>
-    <li><a href='#'>Conatct</a></li>
-  </ul>
-</nav>
-  </body>
 </html>
