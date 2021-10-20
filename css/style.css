@@ -1,5 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:300);
 
+html {
+  background-color: lightgray;
+}
+
+.sections {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Nunito";
+  padding: 20px;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -128,10 +140,10 @@ ul {
 
 nav {
   height: 40px;
-  margin: 40px auto;
+  margin: 0;
   background-color: rgba(23, 23, 50, 0.7);
   text-align: center;
-  border-radius: 4px;
+  border-radius: 0;
 }
 .main {
   display: flex;
@@ -170,8 +182,6 @@ a:hover {
   padding: 10px 0;
 }
 
-/*------------- menu2 animation -------------------*/
-
 .main li:hover .menu2 li:first-of-type {
   animation: menu2 0.3s ease-in-out forwards;
   animation-delay: 0.3s;
@@ -207,8 +217,6 @@ a:hover {
   }
 }
 
-/*------------- menu3 animation -------------------*/
-
 .main li:hover .menu3 li:first-of-type {
   animation: menu3 0.3s ease-in-out forwards;
   animation-delay: 0.3s;
@@ -239,8 +247,6 @@ a:hover {
     transform: translateX(0);
   }
 }
-
-/*------------- menu4 animation -------------------*/
 
 .main li:hover .menu4 li:first-of-type {
   animation: menu4 0.3s ease-in-out forwards;
@@ -273,8 +279,6 @@ a:hover {
   }
 }
 
-/*------------- menu5 animation -------------------*/
-
 .main li:hover .menu5 li:first-of-type {
   animation: menu5 0.3s ease-in-out forwards;
   animation-delay: 0.3s;
@@ -303,39 +307,6 @@ a:hover {
   100% {
     opacity: 1;
     transform: rotateX(0);
-  }
-}
-
-/*------------- menu6 animation -------------------*/
-
-.main li:hover .menu6 li:first-of-type {
-  animation: menu6 0.3s ease-in-out forwards;
-  animation-delay: 0.2s;
-}
-
-.main li:hover .menu6 li:nth-of-type(2) {
-  animation: menu6 0.3s ease-in-out forwards;
-  animation-delay: 0.4s;
-}
-
-.main li:hover .menu6 li:nth-of-type(3) {
-  animation: menu6 0.3s ease-in-out forwards;
-  animation-delay: 0.6s;
-}
-
-.main li:hover .menu6 li:last-of-type {
-  animation: menu6 0.3s ease-in-out forwards;
-  animation-delay: 0.8s;
-}
-
-@keyframes menu6 {
-  0% {
-    opacity: 0;
-    transform: scale(2);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
   }
 }
 
@@ -612,7 +583,7 @@ article {
     }
     .container {
     	display: flex;
-    	justify-content: left;
+    	justify-content: center;
     	height: 30vh;
     	align-items: center;
     	position: relative;
