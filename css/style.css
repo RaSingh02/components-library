@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+      @import url(https://fonts.googleapis.com/css?family=Nunito:300);
 
 html {
   background-color: lightgray;
@@ -438,7 +438,7 @@ article {
     hsl(98 100% 62%),
     hsl(204 100% 59%)
     );
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
   }
